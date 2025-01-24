@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*    Header    */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f51b5;
+    padding: 20px;
+    color: #fff;
+    border-radius: 8px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.search-bar img {
+    width: 27px;
+    margin-left: 4px;
+}
+
+/*   Styling a table   */
+table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color:  #3f51b5;;
+    color: #fff;
+}
+
+th {
+    padding: 20px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Light gray for odd rows */
+}
+
+button {
+    background-color: #e0e0e0;
+    color: #3f51b5;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:  #d5d5d5;
+}
+
+
+.data-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #3f51b5;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #3f51b5;
+    color: white;
+    border-radius: 8px;
+}
+
+
+/* Media */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+
+    nav a {
+        margin: 10px 0; /* Add spacing between links */
+    }
+
+    table {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+}
+
+
+
+
