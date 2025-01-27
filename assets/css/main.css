@@ -113,16 +113,6 @@ button:hover {
     margin-right: 10px;
 }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #1a237e;
-    color: white;
-    border-radius: 8px;
-}
-
-
 /* Media */
 
 @media (max-width: 768px) {
